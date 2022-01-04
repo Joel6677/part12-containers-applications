@@ -1,0 +1,13 @@
+Script started on 2022-01-02 04:52:57+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="183" LINES="29"]
+]0;root@DESKTOP-TORSO4B: /mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answersroot@DESKTOP-TORSO4B:/mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answers# [K]0;root@DESKTOP-TORSO4B: /mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answersroot@DESKTOP-TORSO4B:/mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answers# echo "docker container run -it ubuntu bash"
+docker container run -it ubuntu bash
+]0;root@DESKTOP-TORSO4B: /mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answersroot@DESKTOP-TORSO4B:/mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answers# echo [K "mkdir -p ([K/usr/src/app"
+mkdir -p /usr/src/app
+]0;root@DESKTOP-TORSO4B: /mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answersroot@DESKTOP-TORSO4B:/mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answers# echo "touch index.js"
+touch index.js
+]0;root@DESKTOP-TORSO4B: /mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answersroot@DESKTOP-TORSO4B:/mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answers# echo "exit"
+exit
+]0;root@DESKTOP-TORSO4B: /mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answersroot@DESKTOP-TORSO4B:/mnt/c/Users/joelh/OneDrive/Tiedostot/GitHub/part12-containers-applications/script-answers# exit
+exit
+
+Script done on 2022-01-02 04:53:53+02:00 [COMMAND_EXIT_CODE="0"]
