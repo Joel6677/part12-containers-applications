@@ -17,6 +17,9 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/statistics', async (req, res) => {
+  let added_todos = await getAsync('added_todos')
+  added_todos ? null : added_todos = 0
+  await setAsync('added_todos', added_todos)
   res.json(await getAsync('added_todos'))
 })
 
