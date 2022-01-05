@@ -27,4 +27,8 @@ OK
 [0m[34;42mtodo-backend[0m  [34;42mtodo-frontend[0m
 ]0;hejoel@DESKTOP-TORSO4B: /mnt/c/Users/joelh/part12-containers-applications/todo-app[01;32mhejoel@DESKTOP-TORSO4B[00m:[01;34m/mnt/c/Users/joelh/part12-containers-applications/todo-app[00m$ cd todo-backend
 ]0;hejoel@DESKTOP-TORSO4B: /mnt/c/Users/joelh/part12-containers-applications/todo-app/todo-backend[01;32mhejoel@DESKTOP-TORSO4B[00m:[01;34m/mnt/c/Users/joelh/part12-containers-applications/todo-app/todo-backend[00m$ ls
-[0m[01;32mDockerfile[0m  [01;32mREADME.md[0m  [01;32mapp.js[0m  [34;42mbin[0m  [01;32mdocker-compose.dev.yml[0m  [01;32mdocker-compose.yml[0m  [34;42mmongo[0m  [34;42mnode_modules[0m  [01;32mpackage-lock.json[0m  [01;32mpackage.json[0m  [34;42mredis[0m  [34;4
+[0m[01;32mDockerfile[0m  [01;32mREADME.md[0m  [01;32mapp.js[0m  [34;42mbin[0m  [01;32mdocker-compose.dev.yml[0m  [01;32mdocker-compose.yml[0m  [34;42mmongo[0m  [34;42mnode_modules[0m  [01;32mpackage-lock.json[0m  [01;32mpackage.json[0m  [34;42mredis[0m  [34;42mroutes[0m  [34;42mutil[0m
+]0;hejoel@DESKTOP-TORSO4B: /mnt/c/Users/joelh/part12-containers-applications/todo-app/todo-backend[01;32mhejoel@DESKTOP-TORSO4B[00m:[01;34m/mnt/c/Users/joelh/part12-containers-applications/todo-app/todo-backend[00m$ exit
+exit
+
+Script done on 2022-01-05 18:42:23+02:00 [COMMAND_EXIT_CODE="0"]
