@@ -16,3 +16,9 @@ FROM nginx:1.20-alpine
 # COPY the directory build from build-stage to /usr/share/nginx/html
 # The target location here was found from the docker hub page
 COPY --from=build-stage /usr/src/app/build /usr/share/nginx/html
+
+FROM node:16 AS test-stage
+
+COPY --from=build-stage /usr/src/app /usr/src/app
+
+RUN CI=true npm test
