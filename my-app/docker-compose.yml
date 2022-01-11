@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+  app:
+    image: bloglist-front
+    build:
+      context: ./bloglist-frontend
+      dockerfile: Dockerfile 
+    volumes:
+      - ./bloglist-frontend:/usr/src/app 
+    ports:
+      - 3000:3000
+    container_name: bloglist-front
+  server:
+    image: bloglist-back
+    build:
+      context: ./bloglist-backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./bloglist-backend:/usr/src/app
+    ports:
+      - 3001:3001
+    container_name: bloglist-back
+    environment:
+      - MONGO_URL=mongodb://joel:kotka09@my-app_mongo_1/blog
+      - PORT=3001
+      - SECRET=sekred
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: joel
+      MONGO_INITDB_ROOT_PASSWORD: kotka09
+      MONGO_INITDB_DATABASE: blog
+    volumes:
+      - ./bloglist-backend/mongo_data:/data/db

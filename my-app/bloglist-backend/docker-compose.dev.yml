@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  server:
+    image: blog-back-dev
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 3001:3001
+    container_name: blog-back-dev
+    environment:
+      - MONGO_URL=mongodb://joel:kotka09@blocklist-backend_mongo_1/blog
+      - PORT=3001
+      - SECRET=sekred
+  mongo:
+    image: mongo
+    ports:
+      - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: joel
+      MONGO_INITDB_ROOT_PASSWORD: kotka09
+      MONGO_INITDB_DATABASE: blog
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data: null

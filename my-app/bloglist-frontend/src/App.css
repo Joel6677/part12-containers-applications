@@ -1,0 +1,46 @@
+h1 {
+  color: rgb(19, 82, 78);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.notifRed {
+  border-width: 3px;
+  border-style: solid;
+  border-color: tomato;
+  background-color: rgb(255, 153, 153);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: Verdana, Arial, sans-serif;
+
+}
+
+.blogHeader {
+  cursor: pointer;
+  color: rgb(10, 85, 80);
+}
+
+.notifGreen {
+  border-width: 3px;
+  border-style: solid;
+  border-color: lightseagreen;
+  background-color: rgb(191, 255, 182);
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+li.blog {
+  list-style: none outside none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(22, 68, 128);
+  padding: 5px;
+  margin: 1px;
+  border-radius: 4px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
